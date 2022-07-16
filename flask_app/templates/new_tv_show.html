@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
+    <title>Tv_show</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -16,9 +16,9 @@
             <a href="/logout" class="btn btn-info">Logout</a>
         </div>
     </nav>
-    <form action="/create/recipe" method="post" class="col-11 p-4 my-4 bg-dark text-light mx-auto">
-        <h2 class="text-primary">Add a New Recipe</h2>
-        {% with messages = get_flashed_messages(category_filter=['recipe']) %}
+    <form action="/create/tv_show" method="post" class="col-11 p-4 my-4 bg-dark text-light mx-auto">
+        <h2 class="text-primary">Add a New tv_show</h2>
+        {% with messages = get_flashed_messages(category_filter=['tv_show']) %}
             {% if messages %}
             <div class="alert alert-danger" role="alert">
                 <strong>Flash</strong>
@@ -58,7 +58,7 @@
                     <label for="1" class="text-warning">Yes</label>
                 </div>
                 <br>
-                <input type="submit" value="Add Recipe" class="btn btn-primary">
+                <input type="submit" value="Add tv_show" class="btn btn-primary">
                 </div>
             </div>
         </div>
